@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, black, #3d3d3d, #2e2e2e);
+    user-select: none;
+}
+
+.banner {
+    height: 47vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Archean.png/1280px-Archean.png);
+    background-size: cover;
+    background-position: 0% 10%;
+    position: relative;
+    color: white;
+    text-align: center;
+    object-fit: cover;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 22vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #131313 100%);
+    z-index: 2;
+}
+
+.banner_title {
+    font-size: 5em;
+    margin: 0;
+    user-select: none;
+    text-shadow: 0px 0px 3px 3px black;
+}
+
+body p{
+    text-align: center;
+    color: #aaaaaa;
+    padding-top: 1rem;
+}
+
+.balik {
+    position: absolute;
+    margin: 0.725rem 0px 0px 5rem;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #c8c8c8;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.container {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+    padding: 1.25rem;
+
+}
+
+.card {
+    width: 18.75rem;
+    border: 2px solid #565656;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #ffffff48;
+    background-color: rgb(0, 93, 81);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardimg {
+    width: 100%;
+    height: 12.188rem;
+    object-fit: cover;
+    position: relative;
+    position: 0% 50%;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.overlay.active img {
+    transform: scale(1);
+}
+
+.cardkonten {
+    padding: 1.25rem;
+    text-align: center;
+    user-select: none;
+}
+
+.cardkonten h3 {
+    margin-top: 0;
+    color: #333;
+    color: white;
+}
+
+.cardkonten p {
+    font-size: 0.9em;
+    color: white;
+}
+
+footer {
+    padding: 1.5rem 0;
+    text-align: center;
+    background: linear-gradient(#2f2f2f, #636363);
+    color: white;
+    user-select: none;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        background: linear-gradient(#171717, #1f1f1f);
+    }
+    .card{
+        width: 10rem;
+    }
+    .cardkonten h3{
+        font-size: 0.87rem;
+    }
+    .cardkonten p{
+        font-size: 0.75rem;
+    }
+
+    footer {
+        background: linear-gradient(#1f1f1f, #636363);
+    }
+}

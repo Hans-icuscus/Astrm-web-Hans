@@ -1,0 +1,148 @@
+::-webkit-scrollbar {
+    width: 0rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
+    background: linear-gradient(#320e5a, #183850);
+}
+
+.banner {
+    height: 47vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(https://adamstrailnotes.com/wp-content/uploads/2020/04/Fallen-Angles-JT-Meteor-Shower-scaled.jpg);
+    background-size: cover;
+    background-position: 0% 75%;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #251813 100%);
+    z-index: 2;
+}
+
+.banner_title {
+    font-size: 5rem;
+    margin: 0;
+    user-select: none;
+}
+
+.bridge {
+    position: relative;
+    z-index: -1;
+    height: 5.125rem;
+    background: linear-gradient(#251812, #291D56);
+}
+
+.naratif {
+    font-size: 1.063rem;
+    color: #8f8f8f;
+    text-align: center;
+    margin-top: -1.875rem;
+    user-select: none;
+    text-shadow: 1px 1px 4px #8f8f8f
+}
+
+.menu {
+    max-width: 50rem;
+    margin: 1.25rem auto 2.5rem;
+    padding: 0.938rem;
+}
+
+.balik {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #c8c8c8;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.balik:hover {
+    background-color: #292929;
+    color: white
+}
+
+.buttons:not(.balik) {
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.893rem;
+}
+.buttons{
+    transform: translate(-5rem, 0);
+}
+
+.button {
+    padding: 0.875rem 1.813rem;
+    font-size: 0.938rem;
+    cursor: pointer;
+    border: none;
+    background-color: #1c1822;
+    color: white;
+    border-radius: 0.438rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    color: black;
+    background-color: wheat;
+}
+
+.button.active {
+    font-size: 130%;
+    filter: invert();
+}
+
+.judul_isi {
+    font-size: 2em;
+    margin-top: 1.25rem;
+    margin-bottom: 0.938rem;
+    text-align: center;
+    user-select: none;
+}
+
+.isi {
+    text-align: left;
+    text-shadow: -0.063rem 0.063rem 0.25rem white;
+
+}
+
+.isi p {
+    font-size: 1.25;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 0.8rem 0;
+    text-align: center;
+    user-select: none;
+    background: linear-gradient(#183850, #164a6d);
+}
+
+@media (max-width: 650px){
+    .buttons{
+        scale: 0.7;
+        margin-left: 5rem;
+    }
+}

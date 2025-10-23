@@ -1,0 +1,115 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0rem;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(10, 24, 19);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.atasan {
+    padding: 1.688rem;
+    background-color: rgb(10, 24, 19);
+}
+.button {
+    margin-left: 0.625rem;
+    padding: 0.688rem 1.125rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    background-color: #cbcbcb;
+    margin-right: auto;
+    font-weight: bold;
+    color: #000000;
+    transition: background-color 0.2s, color 0.2s;
+}
+.button:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+
+.content {
+    background: linear-gradient(rgba(3, 14, 7, 0.3), rgba(3, 14, 7, 0.3)), url('https://www.astronomy.com/wp-content/uploads/2023/02/EX1.png');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    user-select: none;
+}
+
+.tahan:hover{
+    animation: lie 7s;
+    animation-delay: 1s;
+}
+a:not(.tahan){
+    text-decoration: none;
+    color: #b4faff;
+}
+a:not(.tahan):hover{
+    filter: brightness(0.7);
+}
+.content p {
+    white-space: pre-line;
+    font-size: 1.563rem;
+    margin: 4vh 15vw 4vh;
+    color: white;
+    font-weight: bold;
+    word-spacing: 0.115rem;
+    line-height: 1.6;
+    border-radius: 5px;
+    text-align: left;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
+}
+
+footer{
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: rgb(10, 24, 19);
+    color: white;
+    user-select: none;
+}
+
+
+@media (max-width: 650px){
+    .button{
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+    .top_margin{
+        padding: 17px;
+    }
+    .bottom_margin{
+        height: 50px;
+    }
+    .content p{
+        margin: 50px;
+        font-size: 18px;
+        line-height: 1.2;
+        word-spacing: 2px;
+        justify-content: center;
+    }
+}
+
+@keyframes lie {
+    0%{
+        color: white;
+    }
+    100%{
+        color: red;
+        text-shadow: 0 0 12px 3px red;
+    }
+    
+}

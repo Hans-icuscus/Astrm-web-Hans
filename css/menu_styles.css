@@ -1,0 +1,690 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+}
+
+
+body {
+    background: linear-gradient(#0c151d, #124f61);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1.6s;
+}
+
+.web_title {
+    font-size: 4.375rem;
+    color: white;
+    position: absolute;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    animation: webtitVFX 14s ease-in-out infinite;
+}
+
+.menu {
+    margin: 0px auto 1.875rem;
+}
+
+
+.navs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem;
+    background: linear-gradient(#000000, #151515);
+}
+
+.nav_buttons {
+    height: 100%;
+    margin: 0.625rem 0.938rem 0px;
+    gap: 0.625rem;
+    display: flex;
+}
+
+
+.socialmedia {
+    display: flex;
+    gap: 0.375rem;
+    margin-top: 0.313rem;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.reddit:hover {
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    animation: socialVFX 0.7s linear infinite;
+}
+.instagram {
+    margin-top: 0.188rem;
+}
+
+
+.nav_button {
+    padding: 0.75rem 0.625rem;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.938rem;
+    font-weight: bold;
+    color: #2e2e2e;
+    cursor: pointer;
+    letter-spacing: -0.125rem;
+    transition: background-color 0.2s, color 0.2s, scale 0.2s;
+}
+
+.nav_button[href="about.html"]:hover{
+    scale: 1.2;
+    box-shadow: 0 0 7px 2px #ffdc7c;
+    background-color: #ffd883;
+    animation: tekmerah 6s linear infinite;
+}
+
+.nav_button[href="galeri.html"]:hover{
+    scale: 1.4;
+    font-weight: bold;
+    animation: tekpelangi 1s linear infinite, tekrenggang 0.6s linear infinite;
+    background-color: white;
+    box-shadow: 0 0 7px 2px white;
+}
+.nav_button[href="event.html"]:hover {
+    scale: 1.3;
+    color: white;
+    box-shadow: 0 0 8px 2px #24e77c;
+    animation: celesti 2s linear infinite;
+}
+
+
+.maintitl {
+    color: white;
+    font-size: 3.125rem;
+    letter-spacing: -0.313rem;
+    padding-right: 23.622rem;
+    user-select: none;
+    text-shadow: -1px 3px 5px white;
+}
+
+.fleks2 {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* paragrafs */
+.paragrafs {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.875rem auto;
+    color: white;
+}
+
+.paragrafs1 {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    max-height: 1000px;
+    transition: all 0.5s ease-in-out;
+}
+
+.paragrafs2 {
+    margin: 1.875rem 1rem;
+    color: white;
+}
+
+.Paragraf1 {
+    margin-top: 1.2rem;
+    padding: 0.2rem 0.7rem;
+    transition: all 0.5s ease-in-out, z-index 0s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.Paragraf2 {
+    white-space: pre-line;
+    overflow: hidden;
+    line-height: 1.2;
+    padding: 1rem 0;
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+}
+
+.Pnaming {
+    width: 25%;
+    font-weight: bold;
+    font-size: 1.563rem;
+    padding: 0.625rem;
+    color: white;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 0.625rem;
+    text-shadow: -0.5px 2px 4px white;
+    user-select: none;
+}
+
+.Pnaming1 {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.563rem;
+    padding: 0.625rem;
+    color: white;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 0.625rem;
+    text-shadow: -0.5px 2px 4px white;
+    user-select: none;
+}
+
+.Pnaming2 {
+    font-weight: bold;
+    font-size: 1.463rem;
+    color: white;
+    margin: -1.3rem 0 1.25rem;
+    text-shadow: -0.5px 2px 4px white;
+    user-select: none;
+}
+
+.Pexer p {
+    line-height: 1.6;
+    margin-bottom: 0.625rem;
+    font-size: 1.125rem;
+}
+
+.Pexer1 {
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 0.115rem;
+    font-size: 1.125rem;
+    text-align: justify;
+}
+
+.read-more,
+.read-more1 {
+    display: inline-block;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+}
+
+.read-more:hover,
+.read-more1:hover {
+    text-decoration: underline;
+}
+
+.Pfull {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.Pfull1 {
+    flex: 1;
+    display: none;
+    padding-top: 0.154rem;
+}
+
+.Pfull.expanded {
+    max-height: 170.75rem;
+    padding: 0.938rem 0.625rem;
+    line-height: 1.5;
+    word-spacing: 2px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.Psection {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    gap: 1.25rem;
+}
+
+.Psection1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.231rem;
+    margin: 0.7rem 0 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    white-space: pre-line;
+}
+
+.ovbtek {
+    font-size: 1.12rem;
+    margin-bottom: 0.8rem;
+    color: #aaaaaa;
+}
+
+.Psection p {
+    flex-grow: 1;
+    padding-left: 1.875rem;
+    font-size: 1.063rem;
+    margin-top: 0.738rem;
+}
+
+.Paragraf2 p {
+    white-space: pre-line;
+    flex-grow: 1;
+    padding-left: 1.875rem;
+    font-size: 1.063rem;
+    margin-top: -0.938rem;
+    line-height: 1.5;
+}
+
+.Psection b,
+.Psection1 b,
+.Pexer b,
+.Pexer1 b {
+    text-shadow: -0.5px 1px 4px white;
+}
+
+.Psection a {
+    color: white;
+    text-decoration: none;
+}
+
+.Paragraf2 a,
+.Paragraf2obvlis a {
+    color: #00cf1c;
+    text-decoration: none;
+}
+
+.Psection img {
+    width: 12.5rem;
+    user-select: none;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Psection1 img {
+    width: 16.5rem;
+    user-select: none;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Paragraf2 img {
+    width: 13.5rem;
+    height: auto;
+    user-select: none;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Paragraf2obvlis p {
+    white-space: pre-line;
+    flex-grow: 1;
+    font-size: 1.263rem;
+    margin: 1.38rem 0 0 8rem;
+    line-height: 1.6;
+}
+
+.Psection img:hover,
+.Psection1 img:hover,
+.Paragraf2 img:hover {
+    scale: 1.0002;
+    box-shadow: 0 1px 14px 6px rgba(255, 255, 255, 0.87);
+
+}
+
+/* gbr */
+.imgkri {
+    order: -1;
+    margin-left: 0.625rem;
+    margin-right: -1.25rem;
+}
+
+.imgkna {
+    order: 1;
+    margin-right: 0.625rem;
+}
+
+
+/* evt */
+/* tgagdevt */
+.paragrafs1.expanded-view .Paragraf1:not(.expanded) {
+    opacity: 0;
+    pointer-events: none;
+    flex: 0;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    max-height: 950px;
+}
+
+.paragrafs1.expanded-view .Paragraf1.expanded {
+    flex: 1;
+    max-width: 100%;
+    z-index: 10;
+}
+
+.Paragraf1.expanded .Pfull1 {
+    display: block;
+    height: 1.538rem;
+}
+
+/*gambar*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.overlay img {
+    width: 80%;
+    max-width: 50rem;
+    border-radius: 15px;
+    scale: 0.9;
+    user-select: none;
+}
+
+.unique {
+    position: relative;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+    color: white;
+    background: linear-gradient(#00000030, #00000030), url("https://www.egypttoursportal.com/images/2024/12/Ancient-Egyptian-Astronomy-Egypt-Tours-Portal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.unique::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.220), rgba(0, 0, 0, 0.220));
+}
+
+.konten_unique {
+    width: min(68.75rem, 92vw);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    padding: clamp(20px, 4vw, 30px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    text-align: justify;
+}
+
+.konten_unique h2 {
+    color: white;
+    margin-bottom: 5px;
+    user-select: none;
+}
+
+.konten_unique p {
+    white-space: pre-line;
+    color: white;
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.judulobsrv {
+    background: linear-gradient(#000000, #1c1c1c);
+    text-align: center;
+    color: white;
+    padding: 1.063rem;
+    user-select: none;
+    text-shadow: 1px 2px 4px white;
+}
+
+.Paragraf2obvlis a {
+    position: relative;
+    display: inline-block;
+}
+
+.Paragraf2obvlis .preview {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-8px);
+    display: block;
+    width: 16rem;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 160ms ease, transform 160ms ease;
+    z-index: 10;
+}
+
+
+.Paragraf2obvlis a:hover .preview {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-14px);
+    z-index: 5;
+}
+
+.Paragraf2obvlis .preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    z-index: 5;
+}
+
+
+footer {
+    padding: 1.5rem 0;
+    text-align: center;
+    background: linear-gradient(#124f61, #1e7d9a);
+    color: white;
+    user-select: none;
+}
+
+/*responsip*/
+@media (max-width: 650px) {
+    .web_title {
+        font-size: 2.87rem;
+    }
+
+    .navs {
+        gap: unset;
+        object-fit: cover;
+        height: 50px;
+    }
+
+    .nav_buttons,
+    .socialmedia {
+        margin: 0px;
+        padding: 0px;
+        scale: 0.7;
+        gap: 4px;
+    }
+
+    .nav_buttons {
+        margin-right: -6rem;
+    }
+
+    .socialmedia {
+        scale: 0.6;
+        margin: 0px 0px 30px 30px;
+    }
+
+    .maintitl {
+        margin-top: 3px;
+        padding: 0px;
+        font-size: 1.3rem;
+        margin-left: 1.875rem;
+    }
+
+    .Pr {
+        width: 70vh;
+    }
+
+    .paragrafs {
+        margin: 0px 1.875rem;
+    }
+
+    .Pnaming,
+    .Pnaming1,
+    .Pnaming2 {
+        font-size: 0.9rem;
+    }
+
+    .paragrafs p,
+    .paragrafs1 p,
+    .paragrafs2 p {
+        word-spacing: 1px;
+        font-size: 0.7rem;
+        text-align: left;
+        line-height: unset;
+    }
+
+    .Paragraf2{
+        padding: unset;
+    }
+
+    .Psection {
+        gap: unset;
+    }
+
+    .Psection img,
+    .Psection1 img,
+    .Paragraf2 img {
+        padding: 0px;
+        margin: -5rem;
+        scale: 0.34;
+        position: relative;
+        z-index: -1;
+    }
+
+    .Psection p {
+        padding: 0px;
+        width: 70vw;
+    }
+
+    .konten_unique {
+        width: 65vh;
+        height: 63vh;
+    }
+
+    .konten_unique h2 {
+        font-size: 0.7rem;
+    }
+
+    .konten_unique p {
+        margin-top: -10px;
+        font-size: 0.542rem;
+    }
+    .judulobsrv{
+        font-size: 20px;
+    }
+    .ovbtek{
+        font-size: 16px;
+        margin: 0 12px;
+    }
+    .Paragraf2{
+        margin: 0 12px;
+    }
+    .Paragraf2obvlis p{
+        margin: unset;
+    }
+}
+
+@keyframes webtitVFX {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-22px);
+    }
+}
+
+@keyframes socialVFX {
+    0% {
+        transform: translateY(0) rotateY(0deg);
+    }
+
+    25% {
+        transform: translateY(-5px) rotateY(90deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotateY(180deg);
+    }
+
+    75% {
+        transform: translateY(-5px) rotateY(270deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateY(360deg);
+    }
+}
+
+@keyframes tekpelangi {
+  0%   { color: red; }
+  14%  { color: orange; }
+  28%  { color: yellow; }
+  42%  { color: green; }
+  57%  { color: blue; }
+  71%  { color: indigo; }
+  85%  { color: violet; }
+  100% { color: red; }
+}
+
+@keyframes tekrenggang {
+    0%,
+    100%{
+        letter-spacing: 0;
+    }
+    50%{
+        letter-spacing: 0.9px;
+    }
+}
+
+@keyframes tekmerah {
+    0%,
+    100%{
+        color: #3d0202;
+    }
+    50%{
+        color: #ad0000;
+    }
+    
+}
+
+@keyframes celesti {
+    0%,
+    100%{
+        background-color: #2582da;
+    }
+    50%{
+        background-color: #8232ce;
+    }
+    
+}
